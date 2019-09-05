@@ -31,7 +31,7 @@ MAX_NB_WORDS = 20000
 ##texts_test = test_text.astype(str)
 from sklearn.datasets import load_files
 
-reviews = load_files('txt_sentoken/')
+reviews = load_files('news500/')
 X,y = reviews.data,reviews.target
 for i in range(0,len(X)):
         words = nltk.word_tokenize(X[i].decode('utf-8'))
